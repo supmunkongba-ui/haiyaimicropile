@@ -16,6 +16,13 @@
         .bg-navy-brand { background-color: #1A202C; }
         details > summary { list-style: none; }
         details > summary::-webkit-details-marker { display: none; }
+        /* Parallax Background Effect for Divider Sections */
+        .bg-parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800 relative text-xl">
@@ -134,6 +141,15 @@
         </div>
     </section>
 
+    <!-- Image Divider 1 -->
+    <div class="w-full h-64 md:h-96 bg-parallax relative flex items-center justify-center" style="background-image: url('1792569860787.jpg');">
+        <div class="absolute inset-0 bg-navy-brand/70"></div>
+        <div class="relative z-10 text-center px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">เสริมความแข็งแกร่งให้ทุกโครงสร้าง</h2>
+            <p class="text-xl md:text-2xl text-orange-400 drop-shadow-md font-medium">รับจบทุกปัญหาหน้างานแคบ เข้าถึงได้ทุกพื้นที่</p>
+        </div>
+    </div>
+
     <!-- Expertise Section -->
     <section id="expertise" class="py-24 bg-section-gray">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -240,19 +256,46 @@
             </div>
         </div>
     </section>
+
+    <!-- Image Divider 2 -->
+    <div class="w-full h-64 md:h-96 bg-parallax relative flex items-center justify-center" style="background-image: url('1792569877598.jpg');">
+        <div class="absolute inset-0 bg-orange-brand/80 mix-blend-multiply"></div>
+        <div class="relative z-10 w-full max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+            <div>
+                <i class="fas fa-hard-hat text-5xl mb-4 drop-shadow-md"></i>
+                <p class="text-4xl font-bold mb-2">15+</p>
+                <p class="text-xl">ปีแห่งประสบการณ์</p>
+            </div>
+            <div>
+                <i class="fas fa-building text-5xl mb-4 drop-shadow-md"></i>
+                <p class="text-4xl font-bold mb-2">500+</p>
+                <p class="text-xl">โครงการที่สำเร็จ</p>
+            </div>
+            <div>
+                <i class="fas fa-user-shield text-5xl mb-4 drop-shadow-md"></i>
+                <p class="text-4xl font-bold mb-2">100%</p>
+                <p class="text-xl">ควบคุมโดยวิศวกร</p>
+            </div>
+            <div>
+                <i class="fas fa-smile text-5xl mb-4 drop-shadow-md"></i>
+                <p class="text-4xl font-bold mb-2">100%</p>
+                <p class="text-xl">ความพึงพอใจ</p>
+            </div>
+        </div>
+    </div>
     
     <!-- Workflow Section -->
-    <section id="workflow" class="py-24 bg-orange-brand">
+    <section id="workflow" class="py-24 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">ขั้นตอนการให้บริการมาตรฐาน<br class="hidden md:block">บริษัท หาดใหญ่ไมโครไพล์ จำกัด</h2>
-                <p class="text-2xl text-orange-100 italic font-medium max-w-4xl mx-auto">(Professional Foundation Solutions: I-Micropile, Spun Micropile, Steel Pile, and Hydraulic Jack-in Pile)</p>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">ขั้นตอนการให้บริการมาตรฐาน<br class="hidden md:block">บริษัท หาดใหญ่ไมโครไพล์ จำกัด</h2>
+                <p class="text-2xl text-gray-500 italic font-medium max-w-4xl mx-auto">(Professional Foundation Solutions: I-Micropile, Spun Micropile, Steel Pile, and Hydraulic Jack-in Pile)</p>
             </div>
 
             <div class="space-y-10">
                 <!-- Step 1 -->
-                <div class="bg-white rounded-3xl p-8 md:p-14 shadow-xl flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:-translate-y-1 transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-gray-100 rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-gray-300 shadow-inner">
+                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
+                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
                         1
                     </div>
                     <div class="flex-grow pt-2">
@@ -270,8 +313,8 @@
                 </div>
 
                 <!-- Step 2 -->
-                <div class="bg-white rounded-3xl p-8 md:p-14 shadow-xl flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:-translate-y-1 transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-gray-100 rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-gray-300 shadow-inner">
+                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
+                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
                         2
                     </div>
                     <div class="flex-grow pt-2">
@@ -286,8 +329,8 @@
                 </div>
 
                 <!-- Step 3 -->
-                <div class="bg-white rounded-3xl p-8 md:p-14 shadow-xl flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:-translate-y-1 transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-gray-100 rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-gray-300 shadow-inner">
+                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
+                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
                         3
                     </div>
                     <div class="flex-grow pt-2">
@@ -301,8 +344,8 @@
                 </div>
 
                 <!-- Step 4 -->
-                <div class="bg-white rounded-3xl p-8 md:p-14 shadow-xl flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:-translate-y-1 transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-gray-100 rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-gray-300 shadow-inner">
+                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
+                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
                         4
                     </div>
                     <div class="flex-grow pt-2">
@@ -317,8 +360,8 @@
                 </div>
 
                 <!-- Step 5 -->
-                <div class="bg-white rounded-3xl p-8 md:p-14 shadow-xl flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:-translate-y-1 transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-gray-100 rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-gray-300 shadow-inner">
+                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
+                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
                         5
                     </div>
                     <div class="flex-grow pt-2">
@@ -335,8 +378,8 @@
                 </div>
 
                 <!-- Step 6 -->
-                <div class="bg-white rounded-3xl p-8 md:p-14 shadow-xl flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:-translate-y-1 transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-gray-100 rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-gray-300 shadow-inner">
+                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
+                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
                         6
                     </div>
                     <div class="flex-grow pt-2">
@@ -396,7 +439,7 @@
     </section>
 
     <!-- Portfolio Section with Zoom Modal (Enforced 2 columns) -->
-    <section id="portfolio" class="py-24 bg-white">
+    <section id="portfolio" class="py-24 bg-section-gray">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-gray-800">ผลงานและโครงการอ้างอิง</h2>
             <p class="text-gray-500 mb-16 text-xl md:text-2xl">คลิกที่รูปภาพเพื่อขยายดูภาพขนาดใหญ่</p>
@@ -404,74 +447,99 @@
             <!-- Grid: 2 columns on all devices (mobile, tablet, desktop) -->
             <div class="grid grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto">
                 <!-- Portfolio items -->
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792569827338.jpg" alt="ผลงาน 1" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <!-- Aspect ratio wrapper to prevent squishing -->
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792569827338.jpg" alt="ผลงาน 1" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792569843407.jpg" alt="ผลงาน 2" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792569843407.jpg" alt="ผลงาน 2" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792569860787.jpg" alt="ผลงาน 3" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792569860787.jpg" alt="ผลงาน 3" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792569877598.jpg" alt="ผลงาน 4" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792569877598.jpg" alt="ผลงาน 4" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792569897262.jpg" alt="ผลงาน 5" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792569897262.jpg" alt="ผลงาน 5" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792571605577.jpg" alt="ผลงาน 6" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792571605577.jpg" alt="ผลงาน 6" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792571623237.jpg" alt="ผลงาน 7" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792571623237.jpg" alt="ผลงาน 7" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792571644513.jpg" alt="ผลงาน 8" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792571644513.jpg" alt="ผลงาน 8" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792571663193.jpg" alt="ผลงาน 9" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792571663193.jpg" alt="ผลงาน 9" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792571682569.jpg" alt="ผลงาน 10" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792571682569.jpg" alt="ผลงาน 10" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792571694487.jpg" alt="ผลงาน 11" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792571694487.jpg" alt="ผลงาน 11" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-gray-100 border-4 border-gray-100" onclick="openModal(this)">
-                    <img src="1792589998435.jpg" alt="ผลงาน 12" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
+                    <div class="aspect-w-4 aspect-h-3 w-full">
+                        <img src="1792589998435.jpg" alt="ผลงาน 12" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out">
+                    </div>
                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i>
                     </div>
@@ -541,3 +609,6 @@
 
 </body>
 </html>
+ใส่รูปที่แนบมาลงในเว็บ  ให้สอดคล้องกับเนื้อหา  
+
+There is a file you can reference named "1000038479.jpg". Refer to this file by its name verbatim.
