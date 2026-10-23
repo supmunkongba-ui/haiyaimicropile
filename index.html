@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Prompt', sans-serif; }
-        .bg-orange-brand { background-color: #FF5A00; } /* Adjusted to match reference image */
+        .bg-orange-brand { background-color: #FF5A00; }
         .text-orange-brand { color: #FF5A00; }
         .border-orange-brand { border-color: #FF5A00; }
-        .bg-section-gray { background-color: #F4F4F6; } /* Light gray background for sections */
-        
-        /* Custom Hover Effect for FAQ */
+        .bg-section-gray { background-color: #F4F4F6; }
         details > summary { list-style: none; }
         details > summary::-webkit-details-marker { display: none; }
     </style>
@@ -31,17 +29,16 @@
                         หาดใหญ่ ไมโครไพล์
                     </div>
                 </div>
-                <!-- Mobile Menu Button (Hidden on Desktop) -->
                 <div class="flex items-center md:hidden">
                     <button type="button" class="text-gray-500 hover:text-gray-900 focus:outline-none" aria-label="Toggle menu">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
-                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-6 text-sm">
                     <a href="#home" class="text-gray-600 hover:text-orange-brand font-medium transition">หน้าแรก</a>
                     <a href="#about" class="text-gray-600 hover:text-orange-brand font-medium transition">เกี่ยวกับเรา</a>
                     <a href="#expertise" class="text-gray-600 hover:text-orange-brand font-medium transition">ความเชี่ยวชาญ</a>
+                    <a href="#workflow" class="text-gray-600 hover:text-orange-brand font-medium transition">ขั้นตอนบริการ</a>
                     <a href="#quality" class="text-gray-600 hover:text-orange-brand font-medium transition">มาตรฐาน QA/QC</a>
                     <a href="#portfolio" class="text-gray-600 hover:text-orange-brand font-medium transition">ผลงาน</a>
                     <a href="#contact" class="bg-orange-brand text-white px-6 py-2.5 rounded-full font-medium hover:bg-orange-600 transition shadow-md">ติดต่อเรา</a>
@@ -58,7 +55,6 @@
                      <i class="fas fa-star text-[10px]"></i> FOUNDATION ENGINEERING SPECIALIST <i class="fas fa-star text-[10px]"></i>
                  </span>
             </div>
-            
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-sm leading-tight">บริษัท หาดใหญ่ ไมโครไพล์ จำกัด</h1>
             <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto font-light leading-relaxed">
                 ผู้เชี่ยวชาญงานวิศวกรรมฐานราก บริการตอกเสาเข็มไมโครไพล์<br class="hidden md:block">
@@ -77,10 +73,9 @@
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
+        <!-- Content omitted for brevity, keeping previous About code -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-                
-                <!-- Left Content -->
                 <div>
                     <h2 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-800 border-l-4 border-orange-brand pl-4 leading-tight">รากฐานที่แข็งแกร่ง เพื่อ<br>สถาปัตยกรรมที่ยั่งยืน</h2>
                     <p class="text-gray-600 mb-8 leading-relaxed text-sm lg:text-base">
@@ -113,9 +108,7 @@
                     </div>
                 </div>
 
-                <!-- Right Content (Cards) -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:mt-8">
-                    <!-- Card 1 -->
                     <div class="bg-orange-50 p-8 rounded-2xl text-center border border-orange-100 flex flex-col justify-center items-center h-full">
                         <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
                              <i class="fas fa-tools text-2xl text-orange-brand"></i>
@@ -124,7 +117,6 @@
                         <p class="text-xs text-gray-500">ปั้นจั่นตีนตะขาบลดแรงสั่นสะเทือน</p>
                     </div>
                     
-                    <!-- Card 2 -->
                     <div class="bg-gray-900 p-8 rounded-2xl text-center flex flex-col justify-center items-center h-full">
                          <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-4">
                              <i class="fas fa-map-marked-alt text-2xl text-orange-brand"></i>
@@ -133,20 +125,19 @@
                         <p class="text-xs text-gray-400 leading-relaxed">สงขลา นครศรีฯ ตรัง พัทลุง และ<br>อื่นๆ</p>
                     </div>
                     
-                    <!-- Card 3 (Full Width) -->
                     <div class="bg-gray-50 p-8 rounded-2xl text-center border border-gray-200 col-span-1 sm:col-span-2 flex flex-col justify-center items-center">
                         <i class="fas fa-handshake text-4xl text-gray-700 mb-4"></i>
                         <h4 class="font-bold text-gray-800 text-lg mb-2">SCG Technical Partnership</h4>
                         <p class="text-xs text-gray-500">ผ่านการตรวจประเมินคุณภาพมาตรฐานทางวิศวกรรมร่วมกับทีม<br class="hidden sm:block">บริการเทคนิคของ SCG</p>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
 
     <!-- Expertise Section -->
     <section id="expertise" class="py-20 bg-section-gray">
+        <!-- Content omitted for brevity, keeping previous Expertise code -->
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-gray-800">ความเชี่ยวชาญของเรา</h2>
@@ -154,7 +145,6 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
                 
-                <!-- I-Micropile -->
                 <div class="bg-white rounded-xl overflow-hidden flex flex-col border-b-[6px] border-yellow-400 shadow-sm hover:shadow-md transition duration-300">
                     <div class="p-8 lg:p-10 flex-grow">
                         <h3 class="text-xl font-bold text-gray-800 text-center mb-1">เสาเข็ม ไมโครไพล์ ไอ</h3>
@@ -178,7 +168,6 @@
                     </div>
                 </div>
 
-                <!-- Spun Micropile -->
                 <div class="bg-white rounded-xl overflow-hidden flex flex-col border-b-[6px] border-yellow-400 shadow-sm hover:shadow-md transition duration-300">
                     <div class="p-8 lg:p-10 flex-grow">
                         <h3 class="text-xl font-bold text-gray-800 text-center mb-1">เสาเข็ม ไมโครไพล์ สปัน</h3>
@@ -202,7 +191,6 @@
                     </div>
                 </div>
                 
-                <!-- Hydraulic Pile -->
                 <div class="bg-white rounded-xl overflow-hidden flex flex-col border-b-[6px] border-yellow-400 shadow-sm hover:shadow-md transition duration-300">
                     <div class="p-8 lg:p-10 flex-grow">
                         <h3 class="text-xl font-bold text-gray-800 text-center mb-1">เครื่องเสาเข็มระบบไฮดรอลิค</h3>
@@ -217,10 +205,8 @@
                     </div>
                 </div>
                 
-                <!-- Hidden div to balance the grid if needed, or leave blank to match the 3-item look -->
                 <div class="hidden lg:block"></div>
 
-                <!-- Screw Pile -->
                 <div class="bg-white rounded-xl overflow-hidden flex flex-col border-b-[6px] border-yellow-400 shadow-sm hover:shadow-md transition duration-300">
                     <div class="p-8 lg:p-10 flex-grow">
                         <h3 class="text-xl font-bold text-gray-800 text-center mb-1">เสาเข็มสกรูไพล์</h3>
@@ -236,7 +222,6 @@
                     </div>
                 </div>
 
-                <!-- Hydraulic Jacked Pile -->
                 <div class="bg-white rounded-xl overflow-hidden flex flex-col border-b-[6px] border-yellow-400 shadow-sm hover:shadow-md transition duration-300">
                     <div class="p-8 lg:p-10 flex-grow">
                         <h3 class="text-xl font-bold text-gray-800 text-center mb-1">เสาเข็มไฮดรอลิคแก้ทรุด</h3>
@@ -255,9 +240,134 @@
             </div>
         </div>
     </section>
+    
+    <!-- Workflow Section -->
+    <section id="workflow" class="py-20 bg-orange-brand">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">ขั้นตอนการให้บริการมาตรฐาน: บริษัท หาดใหญ่ไมโครไพล์ จำกัด</h2>
+                <p class="text-sm text-gray-900 italic font-medium">(Professional Foundation Solutions: I-Micropile, Spun Micropile, Steel Pile, and Hydraulic Jack-in Pile)</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Step 1 -->
+                <div class="bg-white rounded-lg p-6 md:p-8 shadow-md relative overflow-hidden group hover:shadow-lg transition">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gray-200 rounded-full overflow-hidden border-2 border-white shadow-sm">
+                            <img src="https://placehold.co/100x100/eee/999?text=1" alt="วิเคราะห์หน้างาน" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">วิเคราะห์หน้างานและให้คำปรึกษา (Technical Consultation)</h3>
+                            <ul class="space-y-2 text-sm text-gray-600 list-none pl-0">
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i>ทีมวิศวกรหรือผู้เชี่ยวชาญรับข้อมูลลักษณะโครงการ (เช่น ต่อเติมบ้าน, สร้างโรงงาน, งานแก้ไขส่วนทรุด)</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i><strong>คัดเลือกประเภทเสาเข็มที่เหมาะสม</strong></li>
+                                <li class="pl-6"><i class="fas fa-check-square text-green-500 mr-2 -ml-6"></i><strong>:เสาเข็มไอ (I18, I22, I26):</strong> เหมาะสำหรับงานต่อเติมทั่วไปที่เน้นความประหยัดและรวดเร็ว</li>
+                                <li class="pl-6"><i class="fas fa-check-square text-green-500 mr-2 -ml-6"></i><strong>:เสาเข็มสปัน (Dia 21, 25, 30):</strong> เหมาะสำหรับงานที่ต้องการรับน้ำหนักสูงมาก หรือลดแรงสั่นสะเทือนได้ดีกว่าเข็มไอ</li>
+                                <li class="pl-6"><i class="fas fa-check-square text-green-500 mr-2 -ml-6"></i><strong>:เข็มเหล็ก (Steel Pile):</strong> เหมาะสำหรับงานพื้นที่จำกัดมาก งานนวัตกรรม หรือโครงสร้างที่ไม่ต้องการขุดดิน</li>
+                                <li class="pl-6"><i class="fas fa-check-square text-green-500 mr-2 -ml-6"></i><strong>:เข็มไฮดรอลิค (Hydraulic Pile):</strong> เหมาะสำหรับพื้นที่ที่ <strong>"ห้ามมีแรงสั่นสะเทือน"</strong> และต้องการความสะอาดสูงสุด (ไม่มีเสียงตอก)</li>
+                            </ul>
+                            <div class="mt-4 text-gray-800 opacity-50 group-hover:opacity-100 transition"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white rounded-lg p-6 md:p-8 shadow-md relative overflow-hidden group hover:shadow-lg transition">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gray-200 rounded-full overflow-hidden border-2 border-white shadow-sm">
+                            <img src="https://placehold.co/100x100/eee/999?text=2" alt="สำรวจพื้นที่" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">สำรวจพื้นที่และวางแผนทางวิศวกรรม (Site Survey & Planning)</h3>
+                            <ul class="space-y-2 text-sm text-gray-600 list-none pl-0">
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i>เข้าวัดระยะหน้างานจริง ตรวจสอบความกว้างของทางเข้า (เพื่อให้มั่นใจว่าเครื่องจักร/ปั้นจั่นเข้าได้)</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i>เช็คตำแหน่งสาธารณูปโภคใต้ดิน (ท่อประปา, สายไฟ)</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i>กำหนดจุดตอก (Layout) ตามแบบแปลนที่วิศวกรกำหนด</li>
+                            </ul>
+                            <div class="mt-4 text-gray-800 opacity-50 group-hover:opacity-100 transition"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white rounded-lg p-6 md:p-8 shadow-md relative overflow-hidden group hover:shadow-lg transition">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gray-200 rounded-full overflow-hidden border-2 border-white shadow-sm">
+                            <img src="https://placehold.co/100x100/eee/999?text=3" alt="เสนอราคา" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">เสนอราคาและสรุปรูปแบบงาน (Quotation & Agreement)</h3>
+                            <ul class="space-y-2 text-sm text-gray-600 list-none pl-0">
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i>จัดทำใบเสนอราคาตามจำนวนต้นและประเภทเสาเข็มที่ตกลงกัน</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i>สรุปกำหนดการเข้าทำงาน เพื่อไม่ให้กระทบกับแผนการก่อสร้างส่วนอื่นของลูกค้า</li>
+                            </ul>
+                            <div class="mt-4 text-gray-800 opacity-50 group-hover:opacity-100 transition"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white rounded-lg p-6 md:p-8 shadow-md relative overflow-hidden group hover:shadow-lg transition">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gray-200 rounded-full overflow-hidden border-2 border-white shadow-sm">
+                            <img src="https://placehold.co/100x100/eee/999?text=4" alt="การติดตั้ง" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">การติดตั้งด้วยเครื่องจักรเฉพาะทาง (Professional Installation)</h3>
+                            <ul class="space-y-2 text-sm text-gray-600 list-none pl-0">
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i><strong>สำหรับเข็มไอและสปัน:</strong> ใช้ปั้นจั่นไมโครไพล์ขนาดเล็ก ติดตั้งได้แม้ในที่แคบ เพดานต่ำ</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i><strong>สำหรับเข็มไฮดรอลิค:</strong> ใช้เครื่องกดระบบไฮดรอลิค (Static Jack-in) ซึ่งจะไม่มีเสียงตอกและไม่มีแรงสั่นสะเทือนไปยังบ้านข้างเคียง</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i><strong>สำหรับเข็มเหล็ก:</strong> ใช้เครื่องเจาะ/ปั้นระบบไฮดรอลิค ติดตั้งได้รวดเร็วและแม่นยำ</li>
+                            </ul>
+                            <div class="mt-4 text-gray-800 opacity-50 group-hover:opacity-100 transition"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-white rounded-lg p-6 md:p-8 shadow-md relative overflow-hidden group hover:shadow-lg transition">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gray-200 rounded-full overflow-hidden border-2 border-white shadow-sm">
+                            <img src="https://placehold.co/100x100/eee/999?text=5" alt="ตรวจสอบคุณภาพ" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">การตรวจสอบคุณภาพและมาตรฐาน (Quality Control)</h3>
+                            <ul class="space-y-2 text-sm text-gray-600 list-none pl-0">
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i><strong>ตรวจสอบแนวดิ่ง (Plumb Check):</strong> ควบคุมให้เสาเข็มลงไปในแนวดิ่งตลอดการติดตั้ง</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i><strong>การเชื่อมต่อ:</strong> เชื่อมรอยต่อเสาเข็มด้วยไฟฟ้าเต็มรอบตามมาตรฐาน</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i><strong>การวัดค่าการรับน้ำหนัก:</strong></li>
+                                <li class="pl-6"><i class="fas fa-check-square text-green-500 mr-2 -ml-6"></i>ระบบบลอก (I/Spun): เช็กค่า <strong>Last Ten Blow</strong> ทุกต้น เพื่อยืนยันว่าถึงชั้นดินแข็งและรับน้ำหนักได้จริง</li>
+                                <li class="pl-6"><i class="fas fa-check-square text-green-500 mr-2 -ml-6"></i>ระบบไฮดรอลิค: ตรวจเช็กจาก <strong>Pressure Gauge</strong> (เกจวัดความดัน) ซึ่งสามารถคำนวณการรับน้ำหนักได้ทันทีขณะกด</li>
+                            </ul>
+                            <div class="mt-4 text-gray-800 opacity-50 group-hover:opacity-100 transition"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="bg-white rounded-lg p-6 md:p-8 shadow-md relative overflow-hidden group hover:shadow-lg transition">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gray-200 rounded-full overflow-hidden border-2 border-white shadow-sm">
+                            <img src="https://placehold.co/100x100/eee/999?text=6" alt="ส่งมอบงาน" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">การส่งมอบงานและรับประกัน (Completion & Warranty)</h3>
+                            <ul class="space-y-2 text-sm text-gray-600 list-none pl-0">
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i>ทำความสะอาดหน้างาน เก็บเศษวัสดุให้เรียบร้อย</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i>ส่งมอบรายงานการตอก/รายงานผลการติดตั้งให้ลูกค้า</li>
+                                <li><i class="fas fa-check-square text-green-500 mr-2"></i>ออกใบรับประกันผลการติดตั้งตามเงื่อนไขของบริษัท</li>
+                            </ul>
+                            <div class="mt-4 text-gray-800 opacity-50 group-hover:opacity-100 transition"><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- QA/QC Section -->
     <section id="quality" class="py-16 bg-gray-900 text-white border-t-4 border-orange-brand">
+        <!-- Content omitted for brevity, keeping previous QA/QC code -->
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-2xl md:text-3xl font-bold mb-4 text-orange-brand">ขั้นตอนการควบคุมคุณภาพ (QA/QC Protocol)</h2>
@@ -295,7 +405,6 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-20 bg-white">
-        <!-- Content omitted for brevity, you can keep the previous Portfolio code here -->
         <div class="max-w-7xl mx-auto px-4 text-center text-gray-500">
             [ ส่วนผลงานและคำถามที่พบบ่อย (FAQ) คงเดิมตามโค้ดก่อนหน้า ]
         </div>
@@ -303,7 +412,6 @@
 
     <!-- Footer / Contact -->
     <footer id="contact" class="bg-gray-900 text-gray-300 pt-16 pb-24 lg:pb-8 border-t-4 border-gray-800">
-        <!-- Content omitted for brevity, you can keep the previous Footer code here -->
         <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
              &copy; 2024 บริษัท หาดใหญ่ ไมโครไพล์ จำกัด (HATYAI MICROPILE CO., LTD.) All Rights Reserved.
         </div>
