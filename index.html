@@ -48,16 +48,58 @@
                 <div class="flex items-center">
                     <img src="1792569048861.jpg" alt="โลโก้ หาดใหญ่ ไมโครไพล์" class="h-12 md:h-16 w-auto object-contain rounded-lg">
                 </div>
+
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center space-x-6 text-base md:text-lg font-medium">
                     <a href="#home" class="text-gray-700 hover:text-orange-brand transition">หน้าแรก</a>
                     <a href="#about" class="text-gray-700 hover:text-orange-brand transition">เกี่ยวกับเรา</a>
-                    <a href="#services" class="text-gray-700 hover:text-orange-brand transition">บริการเสาเข็ม</a>
-                    <a href="#guide" class="text-gray-700 hover:text-orange-brand transition">บทความแนะนำ</a>
+                    <a href="#services" class="text-gray-700 hover:text-orange-brand transition">บริการของเรา</a>
+                    <a href="#guide" class="text-gray-700 hover:text-orange-brand transition">บทความ</a>
                     <a href="#workflow" class="text-gray-700 hover:text-orange-brand transition">ขั้นตอนการทำงาน</a>
                     <a href="#portfolio" class="text-gray-700 hover:text-orange-brand transition">ผลงาน</a>
-                    <a href="#contact" class="bg-orange-brand text-white px-5 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-md">ติดต่อวิศวกร</a>
+                    <a href="#contact" class="bg-orange-brand text-white px-5 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-md">ติดต่อเรา</a>
                 </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="flex items-center lg:hidden">
+                    <button id="menu-btn" type="button" class="text-gray-700 hover:text-orange-brand focus:outline-none p-2" aria-label="Toggle menu">
+                        <i class="fas fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay Panel -->
+        <div id="mobile-menu" class="fixed inset-0 bg-navy-brand/95 z-[99] hidden flex-col justify-between p-6 text-white backdrop-blur-md transition-all duration-300">
+            <div class="flex justify-between items-center border-b border-gray-800 pb-4">
+                <span class="text-lg font-bold text-orange-brand">เมนูหลัก / Menu</span>
+                <button id="close-btn" type="button" class="text-white text-4xl hover:text-orange-brand focus:outline-none">&times;</button>
+            </div>
+            
+            <div class="flex flex-col space-y-4 text-lg font-medium overflow-y-auto py-4">
+                <a href="#home" class="mobile-link hover:text-orange-brand transition py-2 border-b border-gray-800/50 flex items-center justify-between">หน้าแรก <i class="fas fa-chevron-right text-xs text-orange-brand"></i></a>
+                <a href="#about" class="mobile-link hover:text-orange-brand transition py-2 border-b border-gray-800/50 flex items-center justify-between">เกี่ยวกับเรา <i class="fas fa-chevron-right text-xs text-orange-brand"></i></a>
+                
+                <!-- Services Dropdown in Mobile -->
+                <div class="border-b border-gray-800/50 py-2">
+                    <button id="mobile-service-dropdown-btn" class="w-full flex justify-between items-center hover:text-orange-brand transition">
+                        <span>บริการของเรา</span> <i class="fas fa-chevron-down text-xs text-orange-brand transition-transform" id="service-arrow"></i>
+                    </button>
+                    <div id="mobile-service-submenu" class="hidden flex flex-col pl-4 mt-3 space-y-3 text-base text-gray-300 border-l-2 border-orange-brand">
+                        <a href="#services" class="mobile-link hover:text-orange-brand transition">บริการเสาเข็มทั้งหมด</a>
+                        <a href="#contact" class="mobile-link hover:text-orange-brand transition">ประเมินราคาเข็ม</a>
+                        <a href="#contact" class="mobile-link hover:text-orange-brand transition">ปรึกษา/ขอราคา</a>
+                    </div>
+                </div>
+
+                <a href="#portfolio" class="mobile-link hover:text-orange-brand transition py-2 border-b border-gray-800/50 flex items-center justify-between">ผลงาน <i class="fas fa-chevron-right text-xs text-orange-brand"></i></a>
+                <a href="#guide" class="mobile-link hover:text-orange-brand transition py-2 border-b border-gray-800/50 flex items-center justify-between">บทความ <i class="fas fa-chevron-right text-xs text-orange-brand"></i></a>
+                <a href="#contact" class="mobile-link hover:text-orange-brand transition py-2 border-b border-gray-800/50 flex items-center justify-between">ติดต่อเรา <i class="fas fa-chevron-right text-xs text-orange-brand"></i></a>
+            </div>
+
+            <div class="border-t border-gray-800 pt-4 text-center text-sm text-gray-400">
+                <p class="text-orange-brand font-bold mb-1">โทรด่วน: 080-454-9659</p>
+                <p>บริษัท หาดใหญ่ ไมโครไพล์ จำกัด</p>
             </div>
         </div>
     </nav>
@@ -134,7 +176,7 @@
         </div>
     </section>
 
-    <!-- Services / Expertise Section (เพิ่มภาพที่แนบมา 4 รายการ) -->
+    <!-- Services / Expertise Section -->
     <section id="services" class="py-16 md:py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 md:mb-16">
@@ -295,7 +337,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Section (รูปผลงานหน้างานจริงทั้งหมด 10 รูป) -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="py-16 md:py-20 bg-section-gray">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <span class="text-orange-brand font-semibold uppercase tracking-wider text-xs md:text-sm">Portfolio</span>
@@ -304,7 +346,7 @@
             
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 max-w-7xl mx-auto">
                 <div class="relative rounded-xl overflow-hidden shadow-md cursor-pointer group bg-white" onclick="openModal(this)">
-                    <img src="1792571682569.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-36 md:h-48 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="1792569048861.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-36 md:h-48 object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="relative rounded-xl overflow-hidden shadow-md cursor-pointer group bg-white" onclick="openModal(this)">
                     <img src="1792569726316.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-36 md:h-48 object-cover group-hover:scale-105 transition duration-300">
@@ -411,7 +453,7 @@
         </a>
     </div>
 
-    <!-- JavaScript for Modal -->
+    <!-- JavaScript for Modal & Mobile Menu -->
     <script>
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
@@ -429,6 +471,38 @@
             modal.classList.remove('flex');
             document.body.style.overflow = 'auto';
         }
+
+        // Mobile Menu Toggle Script
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const serviceDropdownBtn = document.getElementById('mobile-service-dropdown-btn');
+        const serviceSubmenu = document.getElementById('mobile-service-submenu');
+        const serviceArrow = document.getElementById('service-arrow');
+
+        function toggleMenu() {
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+        serviceDropdownBtn.addEventListener('click', () => {
+            serviceSubmenu.classList.toggle('hidden');
+            serviceArrow.classList.toggle('rotate-180');
+        });
     </script>
 
 </body>
