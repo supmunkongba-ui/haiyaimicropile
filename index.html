@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บริษัท หาดใหญ่ ไมโครไพล์ จำกัด - รับตอกเสาเข็มทั่วภาคใต้</title>
+    <title>บริษัท หาดใหญ่ ไมโครไพล์ จำกัด - บริการตอกเสาเข็มไมโครไพล์ทั่วภาคใต้</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,7 +12,7 @@
         .bg-orange-brand { background-color: #FF5A00; }
         .text-orange-brand { color: #FF5A00; }
         .border-orange-brand { border-color: #FF5A00; }
-        .bg-section-gray { background-color: #F4F4F6; }
+        .bg-section-gray { background-color: #F8F9FA; }
         .bg-navy-brand { background-color: #1A202C; }
         details > summary { list-style: none; }
         details > summary::-webkit-details-marker { display: none; }
@@ -24,611 +24,319 @@
         }
     </style>
 </head>
-<body class="bg-white text-gray-800 relative text-xl">
+<body class="bg-white text-gray-800 relative text-lg">
+
+    <!-- Top Bar / Quick Contact -->
+    <div class="bg-navy-brand text-gray-300 py-2.5 px-4 text-sm hidden md:block border-b border-gray-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span><i class="fas fa-map-marker-alt text-orange-brand mr-2"></i>หาดใหญ่, สงขลา และบริการทั่วภาคใต้</span>
+                <span><i class="fas fa-file-alt text-orange-brand mr-2"></i>เลขประจำตัวผู้เสียภาษี: 0-9055-62001-69-3</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="tel:0804549659" class="hover:text-orange-brand transition"><i class="fas fa-phone-alt text-orange-brand mr-2"></i>080-454-9659, 089-653-6312</a>
+                <span><i class="fab fa-line text-green-500 mr-2 text-base"></i>Line: PU5125</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm fixed w-full z-50 top-0 border-b border-gray-100 py-3">
+    <nav class="bg-white shadow-md sticky w-full z-50 top-0 border-b border-gray-100 py-3">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
+            <div class="flex justify-between h-16 items-center">
                 <!-- Logo Top Left -->
                 <div class="flex items-center">
-                    <img src="1792569048915.jpg" alt="โลโก้ หาดใหญ่ ไมโครไพล์" class="h-16 md:h-20 w-auto object-contain rounded-lg">
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="flex items-center lg:hidden">
-                    <button type="button" class="text-gray-500 hover:text-orange-brand focus:outline-none" aria-label="Toggle menu">
-                        <i class="fas fa-bars text-4xl"></i>
-                    </button>
+                    <img src="1792569048915.jpg" alt="โลโก้ หาดใหญ่ ไมโครไพล์" class="h-14 md:h-16 w-auto object-contain rounded-lg">
                 </div>
                 <!-- Desktop Menu -->
-                <div class="hidden lg:flex items-center space-x-8 text-xl font-medium">
+                <div class="hidden lg:flex items-center space-x-6 text-lg font-medium">
                     <a href="#home" class="text-gray-700 hover:text-orange-brand transition">หน้าแรก</a>
                     <a href="#about" class="text-gray-700 hover:text-orange-brand transition">เกี่ยวกับเรา</a>
-                    <a href="#expertise" class="text-gray-700 hover:text-orange-brand transition">ความเชี่ยวชาญ</a>
-                    <a href="#workflow" class="text-gray-700 hover:text-orange-brand transition">ขั้นตอนบริการ</a>
-                    <a href="#quality" class="text-gray-700 hover:text-orange-brand transition">มาตรฐาน</a>
+                    <a href="#services" class="text-gray-700 hover:text-orange-brand transition">บริการเสาเข็ม</a>
+                    <a href="#why-us" class="text-gray-700 hover:text-orange-brand transition">ทำไมต้องเรา</a>
+                    <a href="#workflow" class="text-gray-700 hover:text-orange-brand transition">ขั้นตอนการทำงาน</a>
                     <a href="#portfolio" class="text-gray-700 hover:text-orange-brand transition">ผลงาน</a>
-                    <a href="#contact" class="bg-orange-brand text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition shadow-md">ติดต่อเรา</a>
+                    <a href="#contact" class="bg-orange-brand text-white px-6 py-2.5 rounded-full font-bold hover:bg-orange-600 transition shadow-md">ติดต่อวิศวกร</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-40 pb-24 bg-orange-brand text-white relative">
-        <div class="max-w-7xl mx-auto px-4 text-center relative z-10 py-12 md:py-20">
-            <div class="inline-flex items-center justify-center mb-8">
-                 <div class="bg-white p-3 rounded-2xl shadow-lg inline-block">
-                     <img src="1792569048861.jpg" alt="Logo Foundation" class="h-20 md:h-28 w-auto object-contain rounded-xl">
-                 </div>
-            </div>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 drop-shadow-md leading-tight tracking-tight">บริษัท หาดใหญ่ ไมโครไพล์ จำกัด</h1>
-            <p class="text-2xl md:text-3xl lg:text-4xl mb-12 max-w-6xl mx-auto font-light leading-relaxed opacity-95">
-                ผู้เชี่ยวชาญงานวิศวกรรมฐานราก บริการตอกเสาเข็มไมโครไพล์<br class="hidden md:block">
-                ต่อเติม เสริมโครงสร้าง แก้ไขอาคารทรุดตัว ครอบคลุมพื้นที่ภาคใต้
+    <section id="home" class="pt-32 pb-20 bg-gradient-to-br from-gray-900 via-navy-brand to-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-parallax" style="background-image: url('1792569626403.jpg');"></div>
+        <div class="max-w-7xl mx-auto px-4 text-center relative z-10 py-12">
+            <span class="bg-orange-brand/20 text-orange-400 border border-orange-500/30 px-4 py-1.5 rounded-full text-base font-semibold inline-block mb-6">
+                <i class="fas fa-shield-alt mr-2"></i> ควบคุมงานโดยวิศวกรโยธา (กว. ภย.40128)
+            </span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">บริษัท หาดใหญ่ ไมโครไพล์ จำกัด</h1>
+            <p class="text-xl md:text-2xl lg:text-3xl mb-10 max-w-5xl mx-auto font-light text-gray-300 leading-relaxed">
+                ผู้เชี่ยวชาญงานเสาเข็มไมโครไพล์ แก้ไขปัญหาบ้านทรุด ต่อเติมอาคาร พื้นที่แคบ ไร้แรงสั่นสะเทือน บริการครอบคลุมทั่วภาคใต้
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="tel:0804549659" class="bg-gray-900 text-white px-10 py-5 rounded-full text-2xl font-bold hover:bg-gray-800 transition flex items-center justify-center gap-3 shadow-xl w-full sm:w-auto transform hover:-translate-y-1">
-                    <i class="fas fa-phone-alt text-3xl"></i> โทรปรึกษาวิศวกรฟรี
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:0804549659" class="bg-orange-brand text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-orange-600 transition flex items-center justify-center gap-3 shadow-xl">
+                    <i class="fas fa-phone-alt"></i> โทรปรึกษาด่วน: 080-454-9659
                 </a>
-                <a href="#portfolio" class="bg-white text-orange-brand px-10 py-5 rounded-full text-2xl font-bold hover:bg-gray-50 transition shadow-xl w-full sm:w-auto border-2 border-white transform hover:-translate-y-1">
-                    ดูผลงานของเรา
+                <a href="https://line.me/ti/p/~PU5125" target="_blank" class="bg-green-600 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-green-700 transition flex items-center justify-center gap-3 shadow-xl">
+                    <i class="fab fa-line text-2xl"></i> แอดไลน์ประเมินราคาฟรี
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Company Overview Bar -->
+    <section class="bg-white py-12 border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="p-4 border-r last:border-0 border-gray-100">
+                <div class="text-orange-brand text-4xl mb-2"><i class="fas fa-certificate"></i></div>
+                <h4 class="font-bold text-xl text-gray-800">จดทะเบียนถูกต้อง</h4>
+                <p class="text-gray-600 text-base">มี ภ.พ.20 ออกใบกำกับภาษีได้</p>
+            </div>
+            <div class="p-4 border-r last:border-0 border-gray-100">
+                <div class="text-orange-brand text-4xl mb-2"><i class="fas fa-hard-hat"></i></div>
+                <h4 class="font-bold text-xl text-gray-800">วิศวกรควบคุม</h4>
+                <p class="text-gray-600 text-base">การันตีความปลอดภัยทุกต้น</p>
+            </div>
+            <div class="p-4 border-r last:border-0 border-gray-100">
+                <div class="text-orange-brand text-4xl mb-2"><i class="fas fa-tools"></i></div>
+                <h4 class="font-bold text-xl text-gray-800">เครื่องจักรทันสมัย</h4>
+                <p class="text-gray-600 text-base">เข้าหน้างานแคบ ไร้รอยต่อ</p>
+            </div>
+            <div class="p-4">
+                <div class="text-orange-brand text-4xl mb-2"><i class="fas fa-map-marked-alt"></i></div>
+                <h4 class="font-bold text-xl text-gray-800">บริการทั่วภาคใต้</h4>
+                <p class="text-gray-600 text-base">สงขลา นครศรีฯ ตรัง พัทลุง</p>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-24 bg-white">
+    <section id="about" class="py-20 bg-section-gray">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-20">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-10 text-gray-800 border-l-[8px] border-orange-brand pl-6 leading-tight">รากฐานที่แข็งแกร่ง เพื่อ<br>สถาปัตยกรรมที่ยั่งยืน</h2>
-                <p class="text-gray-600 mb-12 leading-relaxed text-xl md:text-2xl max-w-5xl">
-                    เราคือทีมผู้เชี่ยวชาญมากประสบการณ์ งานเล็ก งานใหญ่ ไม่เกี่ยงพื้นที่ บริการตอกเสาเข็มไมโครไพล์ ออกแบบสำหรับการเข้าทำงานในพื้นที่จำกัด ซอยแคบ ชิดรั้ว หรือชิดโครงสร้างเดิม โดยไม่ก่อให้เกิดแรงสั่นสะเทือนกระทบเพื่อนบ้าน พร้อมรายการคำนวณและใบรับรองทางวิศวกรรมถูกต้อง
-                </p>
-                
-                <div class="bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-200 mt-10 max-w-5xl shadow-sm">
-                    <h3 class="font-bold text-3xl md:text-4xl mb-8 flex items-center gap-4 text-gray-800">
-                        <span class="w-5 h-5 bg-orange-brand rounded-full inline-block"></span> 
-                        มาตรฐานและความปลอดภัย 100%
-                    </h3>
-                    <ul class="space-y-6 text-xl md:text-2xl text-gray-700">
-                        <li class="flex items-start gap-4">
-                            <i class="fas fa-check text-green-500 mt-1.5 text-3xl"></i> 
-                            <span><strong>จดทะเบียนนิติบุคคล:</strong> เลขประจำตัวผู้เสียภาษี 0-9055-62001-69-3 (มี ภ.พ.20)</span>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <i class="fas fa-check text-green-500 mt-1.5 text-3xl"></i> 
-                            <span><strong>ควบคุมโดยวิศวกรโยธา:</strong> นายศรายุทธ เมธรุภัตร์ (ใบอนุญาต กว. ภย.40128)</span>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <i class="fas fa-check text-green-500 mt-1.5 text-3xl"></i> 
-                            <span><strong>พนักงานบังคับปั้นจั่น:</strong> ผ่านการอบรมหลักสูตรความปลอดภัย 4 ผู้</span>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <i class="fas fa-check text-green-500 mt-1.5 text-3xl"></i> 
-                            <span><strong>Zero Accident:</strong> สวมอุปกรณ์ PPE ครบชุด พร้อมเข้างานระดับโรงงานอุตสาหกรรม</span>
-                        </li>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-orange-brand font-semibold uppercase tracking-wider text-sm">About Us</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6 text-gray-900 mt-2">รากฐานที่มั่นคง เพื่อโครงสร้างที่ยั่งยืน</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        <strong>บริษัท หาดใหญ่ ไมโครไพล์ จำกัด</strong> ผู้ให้บริการงานเสาเข็มไมโครไพล์และวิศวกรรมฐานรากมืออาชีพ เรามุ่งเน้นการแก้ไขปัญหาการต่อเติมบ้าน อาคารทรุดตัว หรือการสร้างโครงสร้างใหม่ในพื้นที่จำกัด โดยไม่ส่งผลกระทบต่อโครงสร้างเดิมและบ้านข้างเคียง
+                    </p>
+                    <ul class="space-y-4 text-gray-700 mb-8">
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-orange-brand text-xl mt-1"></i><span><strong>นิติบุคคลเชื่อถือได้:</strong> ทะเบียนเลขที่ 0-9055-62001-69-3</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-orange-brand text-xl mt-1"></i><span><strong>ควบคุมงานใกล้ชิด:</strong> โดย นายศรายุทธ เมธรุภัตร์ (กว. ภย.40128)</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-orange-brand text-xl mt-1"></i><span><strong>ทีมงานมืออาชีพ:</strong> พนักงานขับปั้นจั่นผ่านการอบรมความปลอดภัย 4 ผู้</span></li>
                     </ul>
                 </div>
-            </div>
-
-            <!-- Features Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-orange-50 p-10 md:p-14 rounded-3xl text-center border border-orange-100 flex flex-col justify-center items-center hover:shadow-lg transition">
-                    <div class="w-28 h-28 bg-white rounded-full flex items-center justify-center mb-8 shadow-md">
-                         <i class="fas fa-tools text-5xl text-orange-brand"></i>
-                    </div>
-                    <h4 class="font-bold text-gray-800 text-3xl mb-4">เครื่องจักรทันสมัย</h4>
-                    <p class="text-xl text-gray-600">ปั้นจั่นตีนตะขาบลดแรงสั่นสะเทือน</p>
-                </div>
-                
-                <div class="bg-gray-900 p-10 md:p-14 rounded-3xl text-center flex flex-col justify-center items-center hover:shadow-lg transition">
-                     <div class="w-28 h-28 bg-gray-800 rounded-full flex items-center justify-center mb-8 shadow-md">
-                         <i class="fas fa-map-marked-alt text-5xl text-orange-brand"></i>
-                    </div>
-                    <h4 class="font-bold text-white text-3xl mb-4">บริการทั่วภาคใต้</h4>
-                    <p class="text-xl text-gray-300 leading-relaxed">สงขลา นครศรีฯ ตรัง พัทลุง และอื่นๆ</p>
-                </div>
-                
-                <div class="bg-gray-50 p-10 md:p-14 rounded-3xl text-center border border-gray-200 flex flex-col justify-center items-center hover:shadow-lg transition">
-                    <i class="fas fa-handshake text-7xl text-gray-700 mb-8"></i>
-                    <h4 class="font-bold text-gray-800 text-3xl mb-4">SCG Technical Partnership</h4>
-                    <p class="text-xl text-gray-600 leading-relaxed">ผ่านการตรวจประเมินคุณภาพมาตรฐานทางวิศวกรรมร่วมกับทีมบริการเทคนิคของ SCG</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="1792569048915.jpg" alt="ผลงานหาดใหญ่ไมโครไพล์" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+                    <img src="1792569626403.jpg" alt="หน้างานตอกเสาเข็ม" class="rounded-2xl shadow-lg w-full h-64 object-cover mt-8">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Image Divider 1 -->
-    <div class="w-full h-64 md:h-96 bg-parallax relative flex items-center justify-center" style="background-image: url('1792569048915.jpg');">
-        <div class="absolute inset-0 bg-navy-brand/70"></div>
-        <div class="relative z-10 text-center px-4">
-            <h2 class="text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">เสริมความแข็งแกร่งให้ทุกโครงสร้าง</h2>
-            <p class="text-xl md:text-2xl text-orange-400 drop-shadow-md font-medium">รับจบทุกปัญหาหน้างานแคบ เข้าถึงได้ทุกพื้นที่</p>
-        </div>
-    </div>
-
-    <!-- Expertise Section -->
-    <section id="expertise" class="py-24 bg-section-gray">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">ความเชี่ยวชาญของเรา</h2>
+    <!-- Services / Expertise Section (Structured like Preecha Pile style) -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-orange-brand font-semibold uppercase tracking-wider text-sm">Our Products & Services</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mt-2">ประเภทเสาเข็มและบริการของเรา</h2>
+                <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">เลือกใช้เสาเข็มให้เหมาะกับสภาพหน้างานและการรับน้ำหนัก โดยวิศวกรผู้เชี่ยวชาญ</p>
             </div>
             
-            <div class="flex flex-col gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="bg-white rounded-3xl overflow-hidden flex flex-col border-b-[8px] border-yellow-400 shadow-sm hover:shadow-xl transition duration-300">
-                    <div class="p-10 md:p-14">
-                        <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-4">เสาเข็ม ไมโครไพล์ ไอ</h3>
-                        <p class="text-xl text-gray-400 text-center mb-8 uppercase tracking-widest font-medium">(I-MICROPILE)</p>
-                        <p class="text-xl md:text-2xl text-gray-600 text-center mb-10 pb-10 border-b border-gray-200 leading-relaxed">เสาเข็มคอนกรีตอัดแรงรูปตัวไอ (I-Shape) ที่ออกแบบมาเพื่อแก้ปัญหาการเข้าทำงานในพื้นที่จำกัดโดยเฉพาะ</p>
-                        
-                        <div class="text-xl md:text-2xl space-y-6 text-gray-700 leading-relaxed">
-                            <p><strong class="text-gray-900">ลักษณะเด่น:</strong> ผลิตจากคอนกรีตอัดแรงคุณภาพสูง ออกแบบมาเพื่อลดแรงสั่นสะเทือนขณะตอก</p>
-                            <p><strong class="text-gray-900">ข้อดี:</strong> สามารถทำงานในพื้นที่แคบได้ (กว้างเพียง 1.5 เมตร) และหน้างานสะอาดไม่เลอะเทอะเหมือนเข็มเจาะ</p>
-                            <p><strong class="text-gray-900">เหมาะสำหรับ:</strong> งานต่อเติมบ้าน พื้นที่ที่ต้องการความสะอาด และงานโครงสร้างทั่วไปที่ไม่หนักจนเกินไป</p>
-                            
-                            <div class="pt-8">
-                                <p class="font-bold text-orange-brand mb-4 text-2xl">ขนาดและการรับน้ำหนัก (Safe Load):</p>
-                                <ul class="list-none space-y-4 text-xl md:text-2xl text-gray-700 bg-gray-50 p-8 rounded-2xl border border-gray-100">
-                                    <li><strong class="text-gray-900">ขนาด I-18 ซม.:</strong> รับน้ำหนักได้ 10-15 ตัน/ต้น</li>
-                                    <li><strong class="text-gray-900">ขนาด I-22 ซม.:</strong> รับน้ำหนักได้ 15-20 ตัน/ต้น</li>
-                                    <li><strong class="text-gray-900">ขนาด I-26 ซม.:</strong> รับน้ำหนักได้ 25-30 ตัน/ต้น</li>
-                                </ul>
-                            </div>
+                <div class="bg-section-gray rounded-3xl p-8 border border-gray-200 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 bg-orange-brand/10 rounded-2xl flex items-center justify-center text-orange-brand text-3xl mb-6">
+                            <i class="fas fa-cube"></i>
                         </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">เสาเข็ม ไมโครไพล์ ไอ (I-Micropile)</h3>
+                        <p class="text-gray-500 text-sm mb-4">เหมาะสำหรับงานต่อเติมบ้านทั่วไป พื้นที่แคบ</p>
+                        <ul class="space-y-2 text-gray-700 mb-6 text-base">
+                            <li>• ขนาด I-18: รับน้ำหนัก 10-15 ตัน</li>
+                            <li>• ขนาด I-22: รับน้ำหนัก 15-20 ตัน</li>
+                            <li>• ขนาด I-26: รับน้ำหนัก 25-30 ตัน</li>
+                        </ul>
                     </div>
+                    <a href="#contact" class="text-orange-brand font-bold flex items-center gap-2 hover:underline">ปรึกษาเรื่องเข็มตัวไอ <i class="fas fa-arrow-right text-sm"></i></a>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-white rounded-3xl overflow-hidden flex flex-col border-b-[8px] border-yellow-400 shadow-sm hover:shadow-xl transition duration-300">
-                    <div class="p-10 md:p-14">
-                        <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-4">เสาเข็ม ไมโครไพล์ สปัน</h3>
-                        <p class="text-xl text-gray-400 text-center mb-8 uppercase tracking-widest font-medium">(SPUN MICROPILE)</p>
-                        <p class="text-xl md:text-2xl text-gray-600 text-center mb-10 pb-10 border-b border-gray-200 leading-relaxed">เสาเข็มกลมแรงเหวี่ยงหนีศูนย์ ที่ขึ้นชื่อเรื่องความแข็งแกร่งและการรับน้ำหนัก</p>
-                        
-                        <div class="text-xl md:text-2xl space-y-6 text-gray-700 leading-relaxed">
-                            <p><strong class="text-gray-900">ลักษณะเด่น:</strong> เป็นเสาเข็มกลมที่มีรูกลวงตรงกลาง ผลิตด้วยกรรมวิธีแรงเหวี่ยงหนีศูนย์ (Centrifugal Spinning)</p>
-                            <p><strong class="text-gray-900">ข้อดี:</strong> เนื้อคอนกรีตมีความหนาแน่นสูงมาก ทนทานต่อแรงตอก และสามารถรับน้ำหนักได้เหนือกว่าเสาเข็มทั่วไป</p>
-                            <p><strong class="text-gray-900">เหมาะสำหรับ:</strong> โครงสร้างหลักของอาคาร อาคารที่มีความสูงหลายชั้น หรือส่วนต่อเติมที่ต้องการความมั่นคงสูงสุด</p>
-                            
-                            <div class="pt-8">
-                                <p class="font-bold text-orange-brand mb-4 text-2xl">ขนาดและการรับน้ำหนัก (Safe Load):</p>
-                                <ul class="list-none space-y-4 text-xl md:text-2xl text-gray-700 bg-gray-50 p-8 rounded-2xl border border-gray-100">
-                                    <li><strong class="text-gray-800">ขนาดวงกลม 20 ซม.:</strong> รับน้ำหนักได้ 20-25 ตัน/ต้น</li>
-                                    <li><strong class="text-gray-800">ขนาดวงกลม 25 ซม.:</strong> รับน้ำหนักได้ 25-35 ตัน/ต้น</li>
-                                    <li><strong class="text-gray-800">ขนาดวงกลม 30 ซม.:</strong> รับน้ำหนักได้ 30-35 ตัน/ต้น</li>
-                                </ul>
-                            </div>
+                <div class="bg-section-gray rounded-3xl p-8 border border-gray-200 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 bg-orange-brand/10 rounded-2xl flex items-center justify-center text-orange-brand text-3xl mb-6">
+                            <i class="fas fa-circle-notch"></i>
                         </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">เสาเข็ม สปัน (Spun Micropile)</h3>
+                        <p class="text-gray-500 text-sm mb-4">เข็มกลมแรงเหวี่ยงหนีศูนย์ รับน้ำหนักสูงพิเศษ</p>
+                        <ul class="space-y-2 text-gray-700 mb-6 text-base">
+                            <li>• ขนาด Dia 20 ซม. (20-25 ตัน)</li>
+                            <li>• ขนาด Dia 25 ซม. (25-35 ตัน)</li>
+                            <li>• ขนาด Dia 30 ซม. (30-35 ตัน)</li>
+                        </ul>
                     </div>
+                    <a href="#contact" class="text-orange-brand font-bold flex items-center gap-2 hover:underline">ปรึกษาเรื่องเข็มสปัน <i class="fas fa-arrow-right text-sm"></i></a>
                 </div>
-                
+
                 <!-- Card 3 -->
-                <div class="bg-white rounded-3xl overflow-hidden flex flex-col border-b-[8px] border-yellow-400 shadow-sm hover:shadow-xl transition duration-300">
-                    <div class="p-10 md:p-14">
-                        <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-4">เครื่องเสาเข็มระบบไฮดรอลิค</h3>
-                        <p class="text-xl text-gray-400 text-center mb-8 uppercase tracking-widest font-medium">(HYDRAULIC PILE)</p>
-                        <p class="text-xl md:text-2xl text-gray-600 text-center mb-10 pb-10 border-b border-gray-200 leading-relaxed">ที่สุดของเทคโนโลยีการแก้ปัญหา "บ้านทรุด" และการเสริมรากฐานอาคารเดิม</p>
-                        
-                        <div class="text-xl md:text-2xl space-y-6 text-gray-700 leading-relaxed">
-                            <p><strong class="text-gray-900">ลักษณะเด่น:</strong> ใช้แม่แรงไฮดรอลิคกดเสาเข็มลงดินโดยใช้น้ำหนักตัวอาคารเป็นแรงต้าน</p>
-                            <p><strong class="text-gray-900">ข้อดี:</strong> ไร้แรงสั่นสะเทือน โดยสิ้นเชิง (Static Load) จึงไม่กระทบโครงสร้างเดิมที่กำลังมีปัญหา และสามารถวัดค่าการรับน้ำหนักได้จริงทันทีขณะกด (Real-time Load Test)</p>
-                            <p><strong class="text-gray-900">เหมาะสำหรับ:</strong> งานซ่อมแซมบ้านทรุดเอียง การเสริมฐานรากใต้ตึกเดิม (Underpinning) หรือการดีดอาคารปรับระดับ</p>
+                <div class="bg-section-gray rounded-3xl p-8 border border-gray-200 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 bg-orange-brand/10 rounded-2xl flex items-center justify-center text-orange-brand text-3xl mb-6">
+                            <i class="fas fa-hydraulic-press"></i>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="bg-white rounded-3xl overflow-hidden flex flex-col border-b-[8px] border-yellow-400 shadow-sm hover:shadow-xl transition duration-300">
-                    <div class="p-10 md:p-14">
-                        <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-4">เสาเข็มสกรูไพล์</h3>
-                        <p class="text-xl text-gray-400 text-center mb-8 uppercase tracking-widest font-medium">(SCREW PILE)</p>
-                        <p class="text-xl md:text-2xl text-gray-600 text-center mb-10 pb-10 border-b border-gray-200 leading-relaxed">ติดตั้งไว รับน้ำหนักได้ทันที เหมาะสำหรับงานต่อเติมและฐานรากโซล่าเซลล์</p>
-                        
-                        <div class="text-xl md:text-2xl space-y-6 text-gray-700 leading-relaxed">
-                            <p>นวัตกรรมเสาเข็มเหล็กแรงดึงสูงที่ออกแบบมาให้มีใบเกลียว (Helix) คล้ายสกรูขนาดใหญ่ ติดตั้งด้วยระบบหัวเจาะไฮดรอลิคหมุนเข็มลงดินโดยไม่ต้องขุดหน้าดิน</p>
-                            <p><strong class="text-gray-900">จุดเด่น:</strong> หน้างานสะอาด 100% ไม่มีดินโคลนเลอะเทอะ ไม่มีการสั่นสะเทือนที่กระทบโครงสร้างเดิม</p>
-                            <p><strong class="text-gray-900">ความเร็ว:</strong> ติดตั้งได้รวดเร็วที่สุด และสามารถรับน้ำหนัก (Load) ได้ทันทีหลังติดตั้งเสร็จ</p>
-                            <p><strong class="text-gray-900">การใช้งาน:</strong> เหมาะอย่างยิ่งสำหรับงานฐานรากโครงสร้างน้ำหนักเบาถึงปานกลาง เช่น โรงจอดรถ, ห้องกระจก, งานต่อเติมลานซักล้าง หรือแม้แต่ฐานรากแผงโซล่าเซลล์ (Solar Farm) ที่ต้องการความแม่นยำและรวดเร็ว</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="bg-white rounded-3xl overflow-hidden flex flex-col border-b-[8px] border-yellow-400 shadow-sm hover:shadow-xl transition duration-300">
-                    <div class="p-10 md:p-14">
-                        <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-4">เสาเข็มไฮดรอลิคแก้ทรุด</h3>
-                        <p class="text-xl text-gray-400 text-center mb-8 uppercase tracking-widest font-medium">(HYDRAULIC JACKED PILE)</p>
-                        <p class="text-xl md:text-2xl text-gray-600 text-center mb-10 pb-10 border-b border-gray-200 leading-relaxed">หยุดปัญหาบ้านทรุดถาวร แม่นยำด้วยระบบวัดน้ำหนักจริงขณะกด</p>
-                        
-                        <div class="text-xl md:text-2xl space-y-6 text-gray-700 leading-relaxed">
-                            <p>เทคโนโลยีขั้นสูงสำหรับการซ่อมแซมฐานราก (Underpinning) โดยใช้แม่แรงไฮดรอลิคกดเสาเข็มลงไปในดินจนถึงชั้นดินดาน โดยใช้ "น้ำหนักตัวอาคาร" เป็นแรงต้าน</p>
-                            <p><strong class="text-gray-900">จุดเด่น:</strong> สามารถตรวจสอบแรงต้าน (Load Test) ได้แบบ Real-time ทุกต้น เพื่อให้มั่นใจว่าเข็มถึงชั้นดินแข็งและรับน้ำหนักได้จริง</p>
-                            <p><strong class="text-gray-900">ความปลอดภัย:</strong> ไร้แรงสั่นสะเทือนและไร้เสียงรบกวน (Static Load) ทำให้ปลอดภัยต่อโครงสร้างอาคารที่กำลังมีปัญหาและบ้านข้างเคียง</p>
-                            <p><strong class="text-gray-900">การใช้งาน:</strong> เหมาะสำหรับงานซ่อมแซมบ้านที่ทรุดเอียง, การเสริมความแข็งแรงให้ฐานรากเดิม หรือการ "ดีดบ้าน" ปรับระดับอาคารให้กลับมาตรงเหมือนเดิม</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Image Divider 2 -->
-    <div class="w-full h-64 md:h-96 bg-parallax relative flex items-center justify-center" style="background-image: url('1792569626403.jpg');">
-        <div class="absolute inset-0 bg-orange-brand/80 mix-blend-multiply"></div>
-        <div class="relative z-10 w-full max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-            <div>
-                <i class="fas fa-hard-hat text-5xl mb-4 drop-shadow-md"></i>
-                <p class="text-4xl font-bold mb-2">15+</p>
-                <p class="text-xl">ปีแห่งประสบการณ์</p>
-            </div>
-            <div>
-                <i class="fas fa-building text-5xl mb-4 drop-shadow-md"></i>
-                <p class="text-4xl font-bold mb-2">500+</p>
-                <p class="text-xl">โครงการที่สำเร็จ</p>
-            </div>
-            <div>
-                <i class="fas fa-user-shield text-5xl mb-4 drop-shadow-md"></i>
-                <p class="text-4xl font-bold mb-2">100%</p>
-                <p class="text-xl">ควบคุมโดยวิศวกร</p>
-            </div>
-            <div>
-                <i class="fas fa-smile text-5xl mb-4 drop-shadow-md"></i>
-                <p class="text-4xl font-bold mb-2">100%</p>
-                <p class="text-xl">ความพึงพอใจ</p>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Workflow Section -->
-    <section id="workflow" class="py-24 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">ขั้นตอนการให้บริการมาตรฐาน<br class="hidden md:block">บริษัท หาดใหญ่ไมโครไพล์ จำกัด</h2>
-                <p class="text-2xl text-gray-500 italic font-medium max-w-4xl mx-auto">(Professional Foundation Solutions: I-Micropile, Spun Micropile, Steel Pile, and Hydraulic Jack-in Pile)</p>
-            </div>
-
-            <div class="space-y-10">
-                <!-- Step 1 -->
-                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
-                        1
-                    </div>
-                    <div class="flex-grow pt-2">
-                        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">วิเคราะห์หน้างานและให้คำปรึกษา</h3>
-                        <p class="text-xl text-gray-500 mb-6 uppercase tracking-wider">(Technical Consultation)</p>
-                        <ul class="space-y-4 text-xl md:text-2xl text-gray-700 list-none pl-0 leading-relaxed">
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i>ทีมวิศวกรหรือผู้เชี่ยวชาญรับข้อมูลลักษณะโครงการ (เช่น ต่อเติมบ้าน, สร้างโรงงาน, งานแก้ไขส่วนทรุด)</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i><strong>คัดเลือกประเภทเสาเข็มที่เหมาะสม</strong></li>
-                            <li class="flex items-start pl-12"><span class="text-green-500 mr-3 font-bold text-3xl">•</span><strong>เสาเข็มไอ (I18, I22, I26):</strong> เหมาะสำหรับงานต่อเติมทั่วไปที่เน้นความประหยัดและรวดเร็ว</li>
-                            <li class="flex items-start pl-12"><span class="text-green-500 mr-3 font-bold text-3xl">•</span><strong>เสาเข็มสปัน (Dia 21, 25, 30):</strong> เหมาะสำหรับงานที่ต้องการรับน้ำหนักสูงมาก หรือลดแรงสั่นสะเทือนได้ดีกว่าเข็มไอ</li>
-                            <li class="flex items-start pl-12"><span class="text-green-500 mr-3 font-bold text-3xl">•</span><strong>เข็มเหล็ก (Steel Pile):</strong> เหมาะสำหรับงานพื้นที่จำกัดมาก งานนวัตกรรม หรือโครงสร้างที่ไม่ต้องการขุดดิน</li>
-                            <li class="flex items-start pl-12"><span class="text-green-500 mr-3 font-bold text-3xl">•</span><strong>เข็มไฮดรอลิค (Hydraulic Pile):</strong> เหมาะสำหรับพื้นที่ที่ <strong>"ห้ามมีแรงสั่นสะเทือน"</strong> และต้องการความสะอาดสูงสุด</li>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">เข็มไฮดรอลิคแก้บ้านทรุด</h3>
+                        <p class="text-gray-500 text-sm mb-4">ระบบ Static Load ไร้แรงสั่นสะเทือน ปลอดภัยสูง</p>
+                        <ul class="space-y-2 text-gray-700 mb-6 text-base">
+                            <li>• เหมาะสำหรับซ่อมแซมบ้านทรุดเอียง</li>
+                            <li>• ตรวจสอบแรงต้าน Real-time</li>
+                            <li>• ไม่กระทบโครงสร้างเดิม</li>
                         </ul>
                     </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
-                        2
-                    </div>
-                    <div class="flex-grow pt-2">
-                        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">สำรวจพื้นที่และวางแผนทางวิศวกรรม</h3>
-                        <p class="text-xl text-gray-500 mb-6 uppercase tracking-wider">(Site Survey & Planning)</p>
-                        <ul class="space-y-4 text-xl md:text-2xl text-gray-700 list-none pl-0 leading-relaxed">
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i>เข้าวัดระยะหน้างานจริง ตรวจสอบความกว้างของทางเข้า (เพื่อให้มั่นใจว่าเครื่องจักรเข้าได้)</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i>เช็คตำแหน่งสาธารณูปโภคใต้ดิน (ท่อประปา, สายไฟ)</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i>กำหนดจุดตอก (Layout) ตามแบบแปลนที่วิศวกรกำหนด</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
-                        3
-                    </div>
-                    <div class="flex-grow pt-2">
-                        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">เสนอราคาและสรุปรูปแบบงาน</h3>
-                        <p class="text-xl text-gray-500 mb-6 uppercase tracking-wider">(Quotation & Agreement)</p>
-                        <ul class="space-y-4 text-xl md:text-2xl text-gray-700 list-none pl-0 leading-relaxed">
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i>จัดทำใบเสนอราคาตามจำนวนต้นและประเภทเสาเข็มที่ตกลงกัน</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i>สรุปกำหนดการเข้าทำงาน เพื่อไม่ให้กระทบกับแผนการก่อสร้างส่วนอื่นของลูกค้า</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
-                        4
-                    </div>
-                    <div class="flex-grow pt-2">
-                        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">การติดตั้งด้วยเครื่องจักรเฉพาะทาง</h3>
-                        <p class="text-xl text-gray-500 mb-6 uppercase tracking-wider">(Professional Installation)</p>
-                        <ul class="space-y-4 text-xl md:text-2xl text-gray-700 list-none pl-0 leading-relaxed">
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i><strong>สำหรับเข็มไอและสปัน:</strong> ใช้ปั้นจั่นไมโครไพล์ขนาดเล็ก ติดตั้งได้แม้ในที่แคบ เพดานต่ำ</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i><strong>สำหรับเข็มไฮดรอลิค:</strong> ใช้เครื่องกดระบบไฮดรอลิค (Static Jack-in) ไร้เสียงตอกและแรงสั่นสะเทือน</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i><strong>สำหรับเข็มเหล็ก:</strong> ใช้เครื่องเจาะ/ปั้นระบบไฮดรอลิค ติดตั้งได้รวดเร็วและแม่นยำ</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Step 5 -->
-                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
-                        5
-                    </div>
-                    <div class="flex-grow pt-2">
-                        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">การตรวจสอบคุณภาพและมาตรฐาน</h3>
-                        <p class="text-xl text-gray-500 mb-6 uppercase tracking-wider">(Quality Control)</p>
-                        <ul class="space-y-4 text-xl md:text-2xl text-gray-700 list-none pl-0 leading-relaxed">
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i><strong>ตรวจสอบแนวดิ่ง (Plumb Check):</strong> ควบคุมให้เสาเข็มลงไปในแนวดิ่งตลอดการติดตั้ง</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i><strong>การเชื่อมต่อ:</strong> เชื่อมรอยต่อเสาเข็มด้วยไฟฟ้าเต็มรอบตามมาตรฐาน</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i><strong>การวัดค่าการรับน้ำหนัก:</strong></li>
-                            <li class="flex items-start pl-12"><span class="text-green-500 mr-3 font-bold text-3xl">•</span>ระบบบลอก (I/Spun): เช็กค่า <strong>Last Ten Blow</strong> ทุกต้น เพื่อยืนยันชั้นดินแข็ง</li>
-                            <li class="flex items-start pl-12"><span class="text-green-500 mr-3 font-bold text-3xl">•</span>ระบบไฮดรอลิค: ตรวจเช็กจาก <strong>Pressure Gauge</strong> คำนวณการรับน้ำหนักได้ทันที</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Step 6 -->
-                <div class="bg-gray-50 rounded-3xl p-8 md:p-14 border border-gray-200 flex flex-col md:flex-row items-start gap-8 md:gap-12 hover:shadow-lg transition duration-300">
-                    <div class="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center text-6xl md:text-7xl font-bold text-orange-brand shadow-md border-4 border-orange-100">
-                        6
-                    </div>
-                    <div class="flex-grow pt-2">
-                        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">การส่งมอบงานและรับประกัน</h3>
-                        <p class="text-xl text-gray-500 mb-6 uppercase tracking-wider">(Completion & Warranty)</p>
-                        <ul class="space-y-4 text-xl md:text-2xl text-gray-700 list-none pl-0 leading-relaxed">
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i>ทำความสะอาดหน้างาน เก็บเศษวัสดุให้เรียบร้อย</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i>ส่งมอบรายงานการตอก/รายงานผลการติดตั้งให้ลูกค้า</li>
-                            <li class="flex items-start"><i class="fas fa-check-square text-green-500 mt-1.5 mr-4 text-3xl"></i>ออกใบรับประกันผลการติดตั้งตามเงื่อนไขของบริษัท</li>
-                        </ul>
-                    </div>
+                    <a href="#contact" class="text-orange-brand font-bold flex items-center gap-2 hover:underline">ปรึกษาแก้บ้านทรุด <i class="fas fa-arrow-right text-sm"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- QA/QC Section -->
-    <section id="quality" class="py-24 bg-navy-brand text-white border-t-8 border-orange-brand">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-orange-brand">ขั้นตอนการควบคุมคุณภาพ<br class="md:hidden">(QA/QC Protocol)</h2>
-                <p class="text-gray-300 text-xl md:text-2xl">รับประกันความมั่นคงฐานราก มั่นใจถ่ายน้ำหนักสู่ชั้นดินดานจริงทุกต้น</p>
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-20 bg-navy-brand text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-orange-brand font-semibold uppercase tracking-wider text-sm">Why Choose Us</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mt-2">ทำไมต้องเลือก หาดใหญ่ ไมโครไพล์</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-8 text-center">
-                <!-- Step 1 -->
-                <div class="relative flex flex-col items-center">
-                    <div class="w-24 h-24 md:w-28 md:h-28 bg-orange-brand rounded-full flex items-center justify-center text-4xl md:text-5xl mx-auto mb-8 font-bold text-white shadow-xl">1</div>
-                    <h4 class="font-bold mb-4 text-2xl md:text-3xl text-white">สำรวจและวางหมุด</h4>
-                    <p class="text-lg md:text-xl text-gray-400">วางผังพิกัดตำแหน่งเสาเข็มตามแบบวิศวกรรมอย่างแม่นยำ</p>
-                </div>
-                <!-- Step 2 -->
-                <div class="relative flex flex-col items-center">
-                    <div class="w-24 h-24 md:w-28 md:h-28 bg-orange-brand rounded-full flex items-center justify-center text-4xl md:text-5xl mx-auto mb-8 font-bold text-white shadow-xl">2</div>
-                    <h4 class="font-bold mb-4 text-2xl md:text-3xl text-white">ตั้งดิ่งวัดระดับ</h4>
-                    <p class="text-lg md:text-xl text-gray-400">ตรวจแนวดิ่งลูกดิ่งและระดับน้ำ 2 ทิศทางก่อนและระหว่างตอก</p>
-                </div>
-                <!-- Step 3 -->
-                <div class="relative flex flex-col items-center">
-                    <div class="w-24 h-24 md:w-28 md:h-28 bg-orange-brand rounded-full flex items-center justify-center text-4xl md:text-5xl mx-auto mb-8 font-bold text-white shadow-xl">3</div>
-                    <h4 class="font-bold mb-4 text-2xl md:text-3xl text-white">เชื่อมต่อหัวเข็ม 100%</h4>
-                    <p class="text-lg md:text-xl text-gray-400">เชื่อมประกบแผ่นเพลทเหล็กหัวต่อเข็มรอบแนว Full Weld</p>
-                </div>
-                <!-- Step 4 -->
-                <div class="relative flex flex-col items-center">
-                    <div class="w-24 h-24 md:w-28 md:h-28 bg-orange-brand rounded-full flex items-center justify-center text-4xl md:text-5xl mx-auto mb-8 font-bold text-white shadow-xl">4</div>
-                    <h4 class="font-bold mb-4 text-2xl md:text-3xl text-white">เช็ก Last 10 Blows</h4>
-                    <p class="text-lg md:text-xl text-gray-400">บันทึกการจมของเสาเข็ม 10 ครั้งสุดท้าย ตามสมการวิศวกรรม</p>
-                </div>
-                <!-- Step 5 -->
-                <div class="relative flex flex-col items-center">
-                    <div class="w-24 h-24 md:w-28 md:h-28 bg-orange-brand rounded-full flex items-center justify-center text-4xl md:text-5xl mx-auto mb-8 font-bold text-white shadow-xl">5</div>
-                    <h4 class="font-bold mb-4 text-2xl md:text-3xl text-white">ออกใบรับรอง กว.</h4>
-                    <p class="text-lg md:text-xl text-gray-400">ออกหนังสือรับรองการตอกและรายการคำนวณ โดยวิศวกร</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section with Zoom Modal (Using exact filenames from your list) -->
-    <section id="portfolio" class="py-24 bg-section-gray">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-gray-800">ผลงานและโครงการอ้างอิง</h2>
-            <p class="text-gray-500 mb-16 text-xl md:text-2xl">คลิกที่รูปภาพเพื่อขยายดูภาพขนาดใหญ่</p>
             
-            <!-- Grid: 2 columns on all devices -->
-            <div class="grid grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto">
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569626403.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800">
+                    <div class="text-orange-brand text-4xl mb-4"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-3">ได้มาตรฐานวิศวกรรม</h3>
+                    <p class="text-gray-400">ควบคุมทุกขั้นตอนโดยวิศวกรโยธา พร้อมออกใบรับรอง (กว.) มั่นใจได้ในความปลอดภัยของโครงสร้าง</p>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569048915.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
+                <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800">
+                    <div class="text-orange-brand text-4xl mb-4"><i class="fas fa-tools"></i></div>
+                    <h3 class="text-xl font-bold mb-3">เครื่องจักรเข้าพื้นที่แคบได้ดี</h3>
+                    <p class="text-gray-400">ปั้นจั่นตีนตะขาบขนาดกะทัดรัด ทำงานในซอยแคบ ชิดผนัง หรือพื้นที่จำกัดได้ โดยไม่ต้องรื้อโครงสร้าง</p>
                 </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569626403.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569689186.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569707062.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569726316.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569745562.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569761689.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569778390.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569795703.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569810715.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
-                </div>
-                <div class="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer group bg-white border-4 border-white" onclick="openModal(this)">
-                    <div class="aspect-w-4 aspect-h-3 w-full"><img src="1792569827338.jpg" alt="ผลงาน" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"></div>
-                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fas fa-search-plus text-white text-5xl md:text-7xl drop-shadow-lg"></i></div>
+                <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800">
+                    <div class="text-orange-brand text-4xl mb-4"><i class="fas fa-handshake"></i></div>
+                    <h3 class="text-xl font-bold mb-3">บริการจริงใจ ตรงต่อเวลา</h3>
+                    <p class="text-gray-400">ประเมินหน้างานฟรี ให้คำปรึกษาอย่างซื่อสัตย์ งบไม่บานปลาย ส่งมอบงานตรงตามกำหนด</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Image Modal (Lightbox Overlay) -->
-    <div id="imageModal" class="fixed inset-0 z-[100] bg-black/95 hidden items-center justify-center p-4 backdrop-blur-md transition-opacity duration-300 opacity-0" onclick="closeModal()">
-        <span class="absolute top-6 right-8 text-white text-6xl font-bold cursor-pointer hover:text-orange-brand transition z-50">&times;</span>
-        <div class="relative max-w-7xl w-full flex items-center justify-center">
-            <img id="modalImage" src="" alt="Zoomed Image" class="max-h-[90vh] max-w-[95vw] object-contain rounded-2xl shadow-2xl scale-95 transition-transform duration-300">
+    <!-- Workflow Section -->
+    <section id="workflow" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-orange-brand font-semibold uppercase tracking-wider text-sm">Workflow</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mt-2">ขั้นตอนการบริการมาตรฐาน</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-section-gray p-8 rounded-3xl relative border border-gray-200">
+                    <span class="absolute top-4 right-6 text-6xl font-bold text-gray-200">01</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 relative z-10">สำรวจและปรึกษา</h3>
+                    <p class="text-gray-600 relative z-10">รับข้อมูลหน้างาน วิเคราะห์ความต้องการ และเลือกประเภทเสาเข็มที่เหมาะสมที่สุดโดยวิศวกร</p>
+                </div>
+                <div class="bg-section-gray p-8 rounded-3xl relative border border-gray-200">
+                    <span class="absolute top-4 right-6 text-6xl font-bold text-gray-200">02</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 relative z-10">ติดตั้งด้วยเครื่องมือเฉพาะ</h3>
+                    <p class="text-gray-600 relative z-10">ดำเนินการตอกหรือกดเสาเข็มด้วยเครื่องจักรมาตรฐาน ควบคุมแนวดิ่งและตรวจสอบค่า Last Blows ทุกต้น</p>
+                </div>
+                <div class="bg-section-gray p-8 rounded-3xl relative border border-gray-200">
+                    <span class="absolute top-4 right-6 text-6xl font-bold text-gray-200">03</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 relative z-10">ส่งมอบและรับประกัน</h3>
+                    <p class="text-gray-600 relative z-10">ทำความสะอาดหน้างานเรียบร้อย ส่งมอบเอกสารรับรองทางวิศวกรรม พร้อมออกใบรับประกันผลงาน</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-section-gray">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <span class="text-orange-brand font-semibold uppercase tracking-wider text-sm">Portfolio</span>
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 text-gray-900 mt-2">ผลงานและโครงการของเรา</h2>
+            <p class="text-gray-600 mb-12 text-lg">คลิกที่รูปภาพเพื่อขยายดูภาพขนาดใหญ่</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                <div class="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group bg-white" onclick="openModal(this)">
+                    <img src="1792569626403.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group bg-white" onclick="openModal(this)">
+                    <img src="1792569048915.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group bg-white" onclick="openModal(this)">
+                    <img src="1792569689186.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group bg-white" onclick="openModal(this)">
+                    <img src="1792569707062.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal (Lightbox) -->
+    <div id="imageModal" class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center p-4 backdrop-blur-sm transition-opacity" onclick="closeModal()">
+        <span class="absolute top-6 right-8 text-white text-5xl font-bold cursor-pointer hover:text-orange-brand">&times;</span>
+        <img id="modalImage" src="" alt="Zoomed Image" class="max-h-[85vh] max-w-[90vw] object-contain rounded-xl shadow-2xl">
     </div>
 
-    <!-- Footer / Contact Section -->
-    <section id="contact" class="py-24 bg-navy-brand text-white border-t-8 border-orange-brand">
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="py-20 bg-navy-brand text-white border-t-4 border-orange-brand">
         <div class="max-w-7xl mx-auto px-4">
-            <!-- Company Profile Data -->
-            <div class="bg-gray-900 border border-gray-800 p-8 md:p-12 rounded-3xl mb-16 max-w-5xl mx-auto shadow-lg">
-                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-orange-brand text-center">ข้อมูลจดทะเบียนนิติบุคคล</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg md:text-xl text-gray-300">
-                    <div>
-                        <p class="mb-3"><strong>ชื่อบริษัท:</strong> บริษัท หาดใหญ่ ไมโครไพล์ จำกัด</p>
-                        <p class="mb-3"><strong>ชื่ออังกฤษ:</strong> HATYAI MICROPILE CO., LTD.</p>
-                        <p class="mb-3"><strong>เลขประจำตัวผู้เสียภาษี:</strong> 0-9055-62001-69-3 (ภ.พ.20)</p>
-                    </div>
-                    <div>
-                        <p class="mb-3"><strong>วิศวกรโยธาควบคุมงาน:</strong> นายศรายุทธ เมธรุภัตร์</p>
-                        <p class="mb-3"><strong>ใบอนุญาต กว. เลขที่:</strong> ภย.40128</p>
-                        <p class="mb-3"><strong>ทุนจดทะเบียน:</strong> ชำระเต็มมูลค่า ตามประมวลกฎหมาย</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
-                <!-- Card 1: Office -->
-                <div class="bg-gray-900 border border-gray-800 p-8 md:p-12 rounded-3xl text-center shadow-lg hover:border-orange-brand transition duration-300">
-                    <div class="text-orange-brand text-5xl md:text-6xl mb-6">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-orange-400">สำนักงาน</h3>
-                    <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
-                        บริษัท หาดใหญ่ไมโครไพล์ จำกัด (สำนักงานใหญ่)<br>
-                        12 ม.2 ซ.ไพศาลอุทิศ 9 ต.ควนลัง อ.หาดใหญ่ จ.สงขลา 90110
-                    </p>
-                </div>
-
-                <!-- Card 2: Phone -->
-                <div class="bg-gray-900 border border-gray-800 p-8 md:p-12 rounded-3xl text-center shadow-lg hover:border-orange-brand transition duration-300 flex flex-col justify-center">
-                    <div class="text-orange-brand text-5xl md:text-6xl mb-6">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-orange-400">โทร.</h3>
-                    <p class="text-2xl md:text-3xl font-bold text-white tracking-wider">
-                        080-454-9659, 089-653-6312
-                    </p>
-                </div>
-
-                <!-- Card 3: Line -->
-                <div class="bg-gray-900 border border-gray-800 p-8 md:p-12 rounded-3xl text-center shadow-lg hover:border-orange-brand transition duration-300 flex flex-col justify-center">
-                    <div class="text-orange-brand text-5xl md:text-6xl mb-6">
-                        <i class="fas fa-folder-open"></i>
-                    </div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-orange-400">ไลน์</h3>
-                    <p class="text-2xl md:text-3xl font-bold text-white tracking-wider">
-                        PU5125
-                    </p>
-                </div>
-
-                <!-- Card 4: Email -->
-                <div class="bg-gray-900 border border-gray-800 p-8 md:p-12 rounded-3xl text-center shadow-lg hover:border-orange-brand transition duration-300 flex flex-col justify-center">
-                    <div class="text-orange-brand text-5xl md:text-6xl mb-6">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-orange-400">อีเมล</h3>
-                    <p class="text-lg md:text-xl font-bold text-white tracking-wide break-all">
-                        hadyaimicorpile@gmail.com
-                    </p>
-                </div>
-            </div>
-
-            <!-- Form & Map Section -->
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 bg-gray-900/50 p-8 md:p-12 rounded-3xl border border-gray-800">
-                <!-- Contact Form -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <!-- Company Info -->
                 <div>
-                    <h3 class="text-3xl md:text-4xl font-bold mb-8 text-orange-brand">ติดต่อเรา</h3>
-                    <form onsubmit="event.preventDefault(); alert('ส่งข้อความสำเร็จ!');" class="space-y-6">
+                    <h2 class="text-3xl font-bold mb-6 text-orange-brand">บริษัท หาดใหญ่ ไมโครไพล์ จำกัด</h2>
+                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        ยินดีให้คำปรึกษาเรื่องฐานราก เสาเข็มไมโครไพล์ และงานต่อเติมอาคารทุกประเภททั่วภาคใต้ โดยวิศวกรผู้เชี่ยวชาญ
+                    </p>
+                    <div class="space-y-4 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt text-orange-brand mr-3"></i> 12 ม.2 ซ.ไพศาลอุทิศ 9 ต.ควนลัง อ.หาดใหญ่ จ.สงขลา 90110</p>
+                        <p><i class="fas fa-phone-alt text-orange-brand mr-3"></i> 080-454-9659, 089-653-6312</p>
+                        <p><i class="fab fa-line text-green-500 mr-3 text-xl"></i> Line ID: PU5125</p>
+                        <p><i class="fas fa-envelope text-orange-brand mr-3"></i> hadyaimicorpile@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800 shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-white">ส่งข้อความถึงเรา</h3>
+                    <form onsubmit="event.preventDefault(); alert('ส่งข้อความสำเร็จ! เจ้าหน้าที่จะติดต่อกลับโดยเร็วที่สุด');" class="space-y-4">
                         <div>
-                            <label class="block text-lg md:text-xl font-medium mb-2 text-gray-300">Email</label>
-                            <input type="email" required class="w-full px-5 py-4 rounded-xl bg-gray-800 border border-gray-700 text-white text-lg focus:outline-none focus:border-orange-brand">
+                            <input type="text" placeholder="ชื่อ-นามสกุล / บริษัท" required class="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-orange-brand">
                         </div>
                         <div>
-                            <label class="block text-lg md:text-xl font-medium mb-2 text-gray-300">Name</label>
-                            <input type="text" required class="w-full px-5 py-4 rounded-xl bg-gray-800 border border-gray-700 text-white text-lg focus:outline-none focus:border-orange-brand">
+                            <input type="tel" placeholder="เบอร์โทรศัพท์ติดต่อ" required class="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-orange-brand">
                         </div>
                         <div>
-                            <label class="block text-lg md:text-xl font-medium mb-2 text-gray-300">Message</label>
-                            <textarea rows="4" required class="w-full px-5 py-4 rounded-xl bg-gray-800 border border-gray-700 text-white text-lg focus:outline-none focus:border-orange-brand"></textarea>
+                            <textarea rows="3" placeholder="รายละเอียดงาน / สอบถามข้อมูล" required class="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-orange-brand"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-white text-gray-900 font-bold py-4 rounded-xl text-xl hover:bg-gray-100 transition shadow-lg">SUBMIT</button>
+                        <button type="submit" class="w-full bg-orange-brand text-white font-bold py-3.5 rounded-xl hover:bg-orange-600 transition shadow-lg">ส่งข้อความ</button>
                     </form>
                 </div>
-
-                <!-- Google Map Mock / Embed -->
-                <div class="flex flex-col justify-between">
-                    <h3 class="text-3xl md:text-4xl font-bold mb-8 text-orange-brand">แผนที่ตั้งสำนักงาน</h3>
-                    <div class="w-full h-full min-h-[350px] rounded-2xl overflow-hidden border-2 border-gray-700 shadow-xl relative">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.989255793083!2d100.457814!3d7.012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDAnNDQuNCJOIDEwMMKwMjcnMjguMiJF!5e0!3m2!1sth!2sth!4v1650000000000!5m2!1sth!2sth" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            class="w-full h-full">
-                        ></iframe>
-                    </div>
-                </div>
             </div>
 
-            <div class="text-center text-gray-500 text-base md:text-lg mt-16">
-                 &copy; 2024 บริษัท หาดใหญ่ ไมโครไพล์ จำกัด (HATYAI MICROPILE CO., LTD.) All Rights Reserved.
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                &copy; 2024 บริษัท หาดใหญ่ ไมโครไพล์ จำกัด (HATYAI MICROPILE CO., LTD.) All Rights Reserved.
             </div>
         </div>
     </section>
 
     <!-- Floating Action Buttons -->
-    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
-        <a href="https://line.me/ti/p/~PU5125" target="_blank" class="w-16 h-16 md:w-20 md:h-20 bg-green-500 rounded-full text-white flex items-center justify-center text-4xl md:text-5xl shadow-2xl hover:scale-110 hover:bg-green-600 transition duration-300">
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="https://line.me/ti/p/~PU5125" target="_blank" class="w-14 h-14 bg-green-500 rounded-full text-white flex items-center justify-center text-3xl shadow-2xl hover:scale-110 hover:bg-green-600 transition duration-300">
             <i class="fab fa-line"></i>
         </a>
-        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-16 h-16 md:w-20 md:h-20 bg-orange-brand rounded-full text-white flex items-center justify-center text-3xl md:text-4xl shadow-2xl hover:scale-110 hover:bg-orange-600 transition duration-300 cursor-pointer" aria-label="เลื่อนขึ้นด้านบน">
-            <i class="fas fa-arrow-up"></i>
-        </button>
+        <a href="tel:0804549659" class="w-14 h-14 bg-orange-brand rounded-full text-white flex items-center justify-center text-2xl shadow-2xl hover:scale-110 hover:bg-orange-600 transition duration-300">
+            <i class="fas fa-phone-alt"></i>
+        </a>
     </div>
 
-    <!-- JavaScript for Image Modal Zoom -->
+    <!-- JavaScript for Modal -->
     <script>
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
@@ -636,29 +344,15 @@
         function openModal(element) {
             const img = element.querySelector('img');
             modalImg.src = img.src;
-            
             modal.classList.remove('hidden');
             modal.classList.add('flex');
-            
-            void modal.offsetWidth; 
-            
-            modal.classList.remove('opacity-0');
-            modalImg.classList.remove('scale-95');
-            modalImg.classList.add('scale-100');
-            
-            document.body.style.overflow = 'hidden'; 
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
-            modal.classList.add('opacity-0');
-            modalImg.classList.remove('scale-100');
-            modalImg.classList.add('scale-95');
-            
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-                document.body.style.overflow = 'auto';
-            }, 300); 
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
         }
     </script>
 
