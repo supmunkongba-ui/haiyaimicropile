@@ -22,6 +22,22 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        /* ควบคุมให้ข้อความไม่ตัดบรรทัดและปรับขนาดบนมือถือ */
+        .text-nowrap-responsive {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 6vw; /* ขนาดตัวอักษรปรับตามความกว้างจอสำหรับมือถือ */
+        }
+        @media (min-width: 640px) { /* sm */
+            .text-nowrap-responsive { font-size: 2.25rem; } /* text-4xl */
+        }
+        @media (min-width: 768px) { /* md */
+            .text-nowrap-responsive { font-size: 4rem; } /* text-6xl */
+        }
+        @media (min-width: 1024px) { /* lg */
+            .text-nowrap-responsive { font-size: 5rem; } /* text-8xl */
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800 relative text-base md:text-lg">
@@ -46,7 +62,7 @@
             <div class="flex justify-between h-14 md:h-16 items-center">
                 <!-- Logo Top Left -->
                 <div class="flex items-center">
-                    <img src="1792569048861.jpg" alt="โลโก้ หาดใหญ่ ไมโครไพล์" class="h-12 md:h-16 w-auto object-contain rounded-lg">
+                    <img src="1000037938_2.jpg" alt="โลโก้ หาดใหญ่ ไมโครไพล์" class="h-12 md:h-16 w-auto object-contain rounded-lg">
                 </div>
 
                 <!-- Desktop Menu -->
@@ -108,13 +124,22 @@
     <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-br from-gray-900 via-navy-brand to-gray-900 text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-20 bg-parallax" style="background-image: url('1792569626403.jpg');"></div>
         <div class="max-w-7xl mx-auto px-4 text-center relative z-10 py-8 md:py-12">
-            <span class="bg-orange-brand/20 text-orange-400 border border-orange-500/30 px-3 py-1 rounded-full text-xs md:text-sm font-semibold inline-block mb-4 md:mb-6">
-                <i class="fas fa-shield-alt mr-2"></i> ควบคุมงานโดยวิศวกรโยธา (กว. ภย.40128)
-            </span>
-            <h1 class="text-2xl sm:text-3xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight tracking-tight whitespace-nowrap overflow-hidden text-ellipsis">บริษัท หาดใหญ่ ไมโครไพล์ จำกัด</h1>
+            
+            <!-- ไอคอนโลโก้ และ ข้อความควบคุมงาน -->
+            <div class="flex flex-col items-center justify-center mb-6">
+                 <img src="1000037937.jpg" alt="สัญลักษณ์บริษัท" class="h-12 w-auto object-contain rounded-md mb-3 opacity-90 shadow-sm">
+                 <span class="bg-orange-brand/20 text-orange-400 border border-orange-500/30 px-3 py-1.5 rounded-full text-xs md:text-sm font-semibold flex items-center gap-2">
+                     <i class="fas fa-shield-alt"></i> ควบคุมงานโดยวิศวกรโยธา (กว. ภย.40128)
+                 </span>
+            </div>
+
+            <!-- ข้อความชื่อบริษัท (บรรทัดเดียว) -->
+            <h1 class="font-bold mb-4 md:mb-6 leading-tight tracking-tight text-nowrap-responsive">บริษัท หาดใหญ่ ไมโครไพล์ จำกัด</h1>
+            
             <p class="text-base sm:text-lg md:text-2xl mb-8 max-w-4xl mx-auto font-light text-gray-300 leading-relaxed px-2">
                 ผู้เชี่ยวชาญงานเสาเข็มไมโครไพล์ แก้ไขปัญหาบ้านทรุด ต่อเติมอาคาร พื้นที่แคบ ไร้แรงสั่นสะเทือน บริการครอบคลุมทั่วภาคใต้
             </p>
+            
             <div class="flex flex-col sm:flex-row justify-center gap-3 px-4">
                 <a href="tel:0804549659" class="bg-orange-brand text-white px-6 py-3.5 rounded-full text-base md:text-lg font-bold hover:bg-orange-600 transition flex items-center justify-center gap-2 shadow-xl">
                     <i class="fas fa-phone-alt"></i> โทรปรึกษาด่วน: 080-454-9659
@@ -176,7 +201,7 @@
         </div>
     </section>
 
-    <!-- Services / Expertise Section -->
+    <!-- Services / Expertise Section (เพิ่มเข็มไอเป็นรายการแรก) -->
     <section id="services" class="py-16 md:py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 md:mb-16">
@@ -185,11 +210,26 @@
                 <p class="text-gray-600 text-sm md:text-base mt-2 max-w-2xl mx-auto">เลือกใช้เสาเข็มให้เหมาะกับสภาพหน้างานและการรับน้ำหนัก โดยวิศวกรผู้เชี่ยวชาญ</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8">
+                
+                <!-- 0. เข็มไอ (I-Micropile) - เพิ่มใหม่ -->
+                <div class="bg-section-gray rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <img src="1000038777.jpg" alt="เสาเข็มไมโครไพล์ ไอ" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">เสาเข็มไมโครไพล์ ไอ</h3>
+                            <p class="text-gray-600 text-sm mb-4">เสาเข็มรูปตัวไอ (I-Shape) เข้าทำงานในพื้นที่แคบได้ดี เหมาะสำหรับงานต่อเติมบ้านทั่วไป</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="text-orange-brand font-bold text-sm md:text-base flex items-center gap-2 hover:underline">ปรึกษาเรื่องเข็มไอ <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
                 <!-- 1. ฐานเข็มกดแก้ทรุด -->
                 <div class="bg-section-gray rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition flex flex-col justify-between">
                     <div>
-                        <img src="1792839254371.jpg" alt="ฐานเข็มกดแก้ทรุด" class="w-full h-48 object-cover">
+                        <img src="1000038639.jpg" alt="ฐานเข็มกดแก้ทรุด" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-900 mb-2">ฐานเข็มกดแก้ทรุด</h3>
                             <p class="text-gray-600 text-sm mb-4">บริการเสริมฐานราก ซ่อมแซมแก้ไขปัญหาบ้านและอาคารทรุดเอียงโดยเฉพาะ แข็งแรง ปลอดภัย</p>
@@ -203,7 +243,7 @@
                 <!-- 2. เข็มสปัน -->
                 <div class="bg-section-gray rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition flex flex-col justify-between">
                     <div>
-                        <img src="1792839254487.jpg" alt="เข็มสปัน" class="w-full h-48 object-cover">
+                        <img src="1000038640.jpg" alt="เข็มสปัน" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-900 mb-2">เสาเข็มสปัน (Spun Pile)</h3>
                             <p class="text-gray-600 text-sm mb-4">เสาเข็มกลมแรงเหวี่ยงหนีศูนย์คุณภาพสูง ทนทานต่อแรงตอก รับน้ำหนักได้สูงมาก</p>
@@ -217,7 +257,7 @@
                 <!-- 3. เข็มกดไฮดรอลิค -->
                 <div class="bg-section-gray rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition flex flex-col justify-between">
                     <div>
-                        <img src="1792839255177.jpg" alt="เข็มกดไฮดรอลิค" class="w-full h-48 object-cover">
+                        <img src="1000038643.jpg" alt="เข็มกดไฮดรอลิค" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-900 mb-2">เข็มกดไฮดรอลิค</h3>
                             <p class="text-gray-600 text-sm mb-4">ระบบกดนิ่ง ไร้แรงสั่นสะเทือน ไม่มีเสียงรบกวน เหมาะสำหรับหน้างานที่ต้องการความปลอดภัยสูง</p>
@@ -231,10 +271,10 @@
                 <!-- 4. เข็มสกรูไพล์ -->
                 <div class="bg-section-gray rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition flex flex-col justify-between">
                     <div>
-                        <img src="1792839254598.jpg" alt="เข็มสกรูไพล์" class="w-full h-48 object-cover">
+                        <img src="1000038641.jpg" alt="เข็มสกรูไพล์" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">เข็มสกรูไพล์ (Screw Pile)</h3>
-                            <p class="text-gray-600 text-sm mb-4">นวัตกรรมเสาเข็มเหล็ก ติดตั้งรวดเร็ว หน้างานสะอาด 100% เหมาะสำหรับงานต่อเติมเบาและโซล่าเซลล์</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">เข็มสกรูไพล์</h3>
+                            <p class="text-gray-600 text-sm mb-4">นวัตกรรมเสาเข็มเหล็ก ติดตั้งรวดเร็ว หน้างานสะอาด 100% เหมาะสำหรับงานต่อเติมเบา</p>
                         </div>
                     </div>
                     <div class="p-6 pt-0">
@@ -346,7 +386,7 @@
             
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 max-w-7xl mx-auto">
                 <div class="relative rounded-xl overflow-hidden shadow-md cursor-pointer group bg-white" onclick="openModal(this)">
-                    <img src="1792571682569.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-36 md:h-48 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="1792569048861.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-36 md:h-48 object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="relative rounded-xl overflow-hidden shadow-md cursor-pointer group bg-white" onclick="openModal(this)">
                     <img src="1792569726316.jpg" alt="ผลงานตอกเสาเข็ม" class="w-full h-36 md:h-48 object-cover group-hover:scale-105 transition duration-300">
